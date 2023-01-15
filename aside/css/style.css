@@ -1,0 +1,1054 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Cantarell:wght@400;700&family=Catamaran:wght@300&family=Titan+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Catamaran', sans-serif;
+}
+
+body {
+  background-image: url(/image/istockphoto-1203327078-612x612.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .container {
+  -webkit-transition: 10cs;
+  transition: 10cs;
+  width: 900px;
+  height: 630px;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 2px 2px 1px 1px rgba(207, 255, 251, 0.091);
+          box-shadow: 2px 2px 1px 1px rgba(207, 255, 251, 0.091);
+}
+
+body .container .formControl {
+  width: 40%;
+  height: inherit;
+  background: #5fd7ff;
+}
+
+body .container .formControl .signin {
+  margin: 290px auto auto 60px;
+}
+
+body .container .formControl .signin button {
+  width: 250px;
+  height: 40px;
+  border: 1px solid black;
+  outline: none;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 10px;
+  border-radius: 30px;
+  background: white;
+  cursor: pointer;
+}
+
+body .container .formControl .signin button a {
+  text-decoration: none;
+  color: #5fd7ff;
+  font-weight: 600;
+}
+
+body .container .formControl .signin h1 {
+  font-size: 30px;
+}
+
+body .container .formClick {
+  width: 60%;
+  height: inherit;
+  background: white;
+}
+
+body .container form {
+  margin: 150px auto auto 100px;
+}
+
+body .container form h1 {
+  font-size: 30px;
+}
+
+body .container form .inputs {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  top: 10px;
+}
+
+body .container form .inputs .inputForm {
+  padding-left: 10px;
+  width: 350px;
+  height: 30px;
+  margin-top: 20px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+body .container form .inputs .inputForm:focus {
+  border: 1px solid #5fd7ff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .container form .inputs .formLabel {
+  position: absolute;
+  left: 10px;
+  top: 24px;
+}
+
+body .container form .inputs .label {
+  top: 77px;
+}
+
+body .container form .inputs .inputForm.active .formLabel,
+body .container form .inputs .inputForm:focus + .formLabel,
+body .container form .inputs .inputForm:not([value=""]) + .formLabel,
+body .container form .inputs .inputForm.active + .label {
+  background: white;
+  height: 20px;
+  width: 130px;
+  top: 4px;
+  color: #5fd7ff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .container form .inputs .inputForm.active .label,
+body .container form .inputs .inputForm:focus + .label,
+body .container form .inputs .inputForm:not([value=""]) + .label,
+body .container form .inputs .inputForm.active + .label {
+  background: white;
+  height: 20px;
+  width: 70px;
+  top: 60px;
+  color: #5fd7ff;
+}
+
+body .container form .icon {
+  height: 10px;
+  left: 360px;
+  top: 300px;
+  left: 66.5rem;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+}
+
+body .container form .eyeClosed {
+  position: absolute;
+  top: 0px;
+  left: -1px;
+  background: white;
+}
+
+body .container form .bottomButton {
+  width: 360px;
+  height: 15px;
+  margin-top: 30px;
+}
+
+body .container form .bottomButton a {
+  text-decoration: none;
+  color: #5fd7ff;
+}
+
+body .container form .bottomButton button {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 700;
+  background: white;
+}
+
+body .container form .bottomButton .button {
+  margin-left: 180px;
+}
+
+body .container form .login {
+  width: 360px;
+  height: 40px;
+  border: 1px solid black;
+  outline: none;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 30px;
+  border-radius: 30px;
+  background: #6fb7ff;
+  cursor: pointer;
+}
+
+body .container form .login a {
+  text-decoration: none;
+  color: white;
+}
+
+body .container form .signinOptions {
+  width: 20%;
+  height: 30px;
+  margin: 20px auto auto 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container form .signinOptions .signinIcon {
+  width: 30px;
+  height: inherit;
+  background-image: url(/image/images.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .container form .signinOptions .signIcon {
+  width: 30px;
+  height: inherit;
+  background-image: url(/image/facebook.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  background-image: url(/image/istockphoto-1203327078-612x612.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .container {
+  -webkit-transition: 10s;
+  transition: 10s;
+  width: 900px;
+  height: 630px;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 2px 2px 1px 1px rgba(207, 255, 251, 0.091);
+          box-shadow: 2px 2px 1px 1px rgba(207, 255, 251, 0.091);
+}
+
+body .container .formClick {
+  width: 60%;
+  height: inherit;
+  background: white;
+}
+
+body .container .form {
+  margin: 80px auto auto 0px;
+  text-align: center;
+}
+
+body .container .form h1 {
+  font-size: 30px;
+}
+
+body .container .form .firstLast {
+  position: relative;
+}
+
+body .container .form .firstLast .inputForm {
+  width: 167px;
+  height: 30px;
+  margin-top: 20px;
+  width: 200px;
+  height: 25px;
+}
+
+body .container .form .firstLast .inputForm:focus {
+  border: 1px solid #5fd7ff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .container .form .firstLast .labelForm {
+  position: absolute;
+  left: 7rem;
+  top: 23px;
+}
+
+body .container .form .firstLast .formText {
+  left: 18rem;
+}
+
+body .container .form .firstLast .inputForm.active .labelForm,
+body .container .form .firstLast .inputForm:focus + .labelForm,
+body .container .form .firstLast .inputForm:not([value=""]) + .labelForm,
+body .container .form .firstLast .inputForm.active + .label {
+  width: 130px;
+  top: 5px;
+  background: white;
+  height: 20px;
+  color: #5fd7ff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .container .form .username {
+  position: relative;
+}
+
+body .container .form .username .labelForm {
+  position: absolute;
+  left: 7rem;
+  top: 23px;
+}
+
+body .container .form .username .inputForm {
+  width: 350px;
+  height: 30px;
+  margin-top: 20px;
+  width: 200px;
+  height: 25px;
+}
+
+body .container .form .username .inputForm:focus {
+  border: 1px solid #5fd7ff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .container .form .username .inputForm.active .labelForm,
+body .container .form .username .inputForm:focus + .labelForm,
+body .container .form .username .inputForm:not([value=""]) + .labelForm,
+body .container .form .username .inputForm.active + .label {
+  width: 90px;
+  top: 5px;
+  background: white;
+  height: 20px;
+  color: #5fd7ff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .container .form .inputsLayout {
+  width: 200px;
+  height: 70px;
+  position: relative;
+  top: 10px;
+  left: 90px;
+}
+
+body .container .form .inputsLayout .inputForm {
+  width: 350px;
+  height: 30px;
+  margin-top: 20px;
+  width: 200px;
+  height: 25px;
+}
+
+body .container .form .inputsLayout .inputForm:focus {
+  border: 1px solid #5fd7ff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .container .form .inputsLayout .formLabel {
+  position: absolute;
+  left: 23px;
+  top: 23px;
+}
+
+body .container .form .inputsLayout .label {
+  top: 77px;
+}
+
+body .container .form .inputsLayout .inputForm.active .formLabel,
+body .container .form .inputsLayout .inputForm:focus + .formLabel,
+body .container .form .inputsLayout .inputForm:not([value=""]) + .formLabel,
+body .container .form .inputsLayout .inputForm.active + .label {
+  width: 60px;
+  left: 10px;
+  top: 5px;
+  background: white;
+  height: 20px;
+  color: #5fd7ff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .container .form .icon {
+  height: 10px;
+  top: 400px;
+  left: 21rem;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+}
+
+body .container .form .eyeClosed {
+  position: absolute;
+  top: 0px;
+  left: -1px;
+  background: white;
+}
+
+body .container .form .termsCondition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  margin-top: 30px;
+}
+
+body .container .form .termsCondition input {
+  margin-left: 7rem;
+  cursor: pointer;
+}
+
+body .container .form .termsCondition .paragraph {
+  font-weight: 600;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+
+body .container .form .termsCondition .paragraph a {
+  text-decoration: none;
+  color: blue;
+  margin-left: 5px;
+}
+
+body .container .form .login {
+  width: 360px;
+  height: 40px;
+  border: 1px solid black;
+  outline: none;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 20px;
+  border-radius: 30px;
+  background: #6fb7ff;
+  cursor: pointer;
+}
+
+body .container .form .login a {
+  text-decoration: none;
+  color: white;
+}
+
+body .container .signinOption {
+  width: 20%;
+  height: 30px;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .signinOption .signinIcon {
+  width: 30px;
+  height: inherit;
+  background-image: url(/image/images.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .container .signinOption .signIcon {
+  width: 30px;
+  height: inherit;
+  background-image: url(/image/facebook.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .container .formControl {
+  width: 40%;
+  height: inherit;
+  background: #5fd7ff;
+}
+
+body .container .formControl .signin {
+  margin: 250px auto auto 60px;
+}
+
+body .container .formControl .signin button {
+  width: 250px;
+  height: 40px;
+  border: 1px solid black;
+  outline: none;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+  border-radius: 30px;
+  background: white;
+  cursor: pointer;
+}
+
+body .container .formControl .signin button a {
+  text-decoration: none;
+  color: #5fd7ff;
+  font-weight: 600;
+}
+
+body .container .formControl .signin h1 {
+  font-size: 30px;
+}
+
+main .context {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90vw;
+  height: 95vh;
+  background: white;
+  margin: 10px auto;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+          box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+}
+
+main .context .iconsRepresentation {
+  width: 15%;
+  height: inherit;
+  background: rgba(13, 5, 104, 0.915);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  text-align: center;
+}
+
+main .context .iconsRepresentation h2 {
+  margin-top: 10px;
+  color: white;
+}
+
+main .context .iconsRepresentation .dashboardItems {
+  width: 170px;
+  height: 75vh;
+  margin-top: 30px;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .context .iconsRepresentation .dashboardItems .icons {
+  width: 30px;
+  height: inherit;
+  margin-left: 30px;
+}
+
+main .context .iconsRepresentation .dashboardItems .icons i {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #e6e6e6;
+}
+
+main .context .iconsRepresentation .dashboardItems .icons .fa-chess-king {
+  margin-top: 20px;
+}
+
+main .context .iconsRepresentation .dashboardItems .icons .fa-database {
+  margin-top: 30px;
+}
+
+main .context .iconsRepresentation .dashboardItems .icons .fa-address-book {
+  margin-top: 30px;
+}
+
+main .context .iconsRepresentation .dashboardItems .icons .fa-gear {
+  margin-top: 115px;
+}
+
+main .context .iconsRepresentation .dashboardItems .contents {
+  width: 140px;
+  height: inherit;
+}
+
+main .context .iconsRepresentation .dashboardItems .contents ul li {
+  text-align: justify;
+  margin-left: 10px;
+  margin-top: 18px;
+  list-style: none;
+  font-size: 19px;
+}
+
+main .context .iconsRepresentation .dashboardItems .contents ul li:hover {
+  background: white;
+}
+
+main .context .iconsRepresentation .dashboardItems .contents ul li a {
+  text-decoration: none;
+  color: rgba(243, 243, 243, 0.848);
+}
+
+main .context .iconsRepresentation .dashboardItems .contents .setting {
+  margin-top: 7rem;
+}
+
+main .context .iconsRepresentation .profile {
+  width: 90%;
+  height: 8vh;
+  border-top: 1px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .context .iconsRepresentation .profile .personalProfile {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-image: url(/image/profile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 5px;
+}
+
+main .context .iconsRepresentation .profile .profileInfo {
+  margin-top: 0px;
+}
+
+main .context .navigation {
+  width: 85%;
+  height: inherit;
+}
+
+main .context .navigation header {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .context .navigation header .logoHead {
+  width: 70px;
+  height: inherit;
+  background-image: url(/image/UserLogo1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 30px;
+}
+
+main .context .navigation header .tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+  position: relative;
+}
+
+main .context .navigation header .tools input {
+  width: 250px;
+  padding-left: 40px;
+  padding-right: 10px;
+  height: 35px;
+  margin-top: 8px;
+  border: 1px solid gray;
+  outline: none;
+  border-radius: 20px;
+  font-size: 17px;
+}
+
+main .context .navigation header .tools input:focus {
+  background: rgba(232, 232, 232, 0.689);
+  -webkit-transition: 5s;
+  transition: 5s;
+  border: 1px solid #5fd7ff;
+}
+
+main .context .navigation header .tools .fa-magnifying-glass {
+  position: absolute;
+  top: 0px;
+  left: -15px;
+}
+
+main .context .navigation header .tools i {
+  font-size: 20px;
+  margin-left: 30px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+main .context .navigation header .tools .personalProfile {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-image: url(/image/profile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+
+main .context .navigation header .tools .fa-caret-down:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-top: 50px;
+}
+
+main .context .navigation .dualDivs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 84vh;
+}
+
+main .context .navigation .dualDivs .leftNavigate {
+  width: 60%;
+  height: inherit;
+}
+
+main .context .navigation .dualDivs .leftNavigate .welcomeProfile {
+  width: 90%;
+  height: 130px;
+  background: white;
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  -webkit-box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+          box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+}
+
+main .context .navigation .dualDivs .leftNavigate .welcomeProfile .welcome {
+  width: 250px;
+  height: inherit;
+  background: transparent;
+}
+
+main .context .navigation .dualDivs .leftNavigate .welcomeProfile .welcome h5 {
+  font-size: 30px;
+  font-weight: 100;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .welcomeProfile .welcome .paragraph {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+main .context .navigation .dualDivs .leftNavigate .welcomeProfile .picture {
+  width: 150px;
+  height: inherit;
+  background-image: url(/image/Laptop-PNG-File-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .welcomeProfile .notes {
+  width: 200px;
+  height: inherit;
+}
+
+main .context .navigation .dualDivs .leftNavigate .welcomeProfile .notes .signs {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .context .navigation .dualDivs .leftNavigate .welcomeProfile .notes .signs .signOne {
+  width: inherit;
+  height: inherit;
+  background-image: url(/image/STATcompiler-Slide.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .welcomeProfile .notes .signs .two {
+  margin-top: 30px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .events {
+  width: 90%;
+  height: 110px;
+  background: transparent;
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .context .navigation .dualDivs .leftNavigate .events .box {
+  margin-left: 5px;
+  margin-top: -8px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .events .box .eventBox {
+  position: relative;
+  margin-top: 10px;
+  width: 180px;
+  height: 50px;
+  border-radius: 8px;
+  color: rgba(13, 5, 104, 0.915);
+  -webkit-box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+          box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+  cursor: pointer;
+  background: white;
+}
+
+main .context .navigation .dualDivs .leftNavigate .events .box .eventBox:hover {
+  background: rgba(13, 5, 104, 0.915);
+  color: white;
+}
+
+main .context .navigation .dualDivs .leftNavigate .events .box .eventBox h1 {
+  position: absolute;
+  font-size: 40px;
+  top: -17px;
+  left: 15px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .events .box .eventBox span {
+  position: absolute;
+  left: 50px;
+  font-size: 20px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .events .box .eventBox p {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+
+main .context .navigation .dualDivs .leftNavigate p {
+  margin-left: 30px;
+  font-weight: 600;
+  font-size: 17px;
+  height: 20px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools {
+  width: 90%;
+  height: 255px;
+  background: transform;
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .calculatorTool, main .context .navigation .dualDivs .leftNavigate .tools .converterTool {
+  width: 260px;
+  height: 100%;
+  -webkit-box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+          box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+  background: white;
+  border-radius: 8px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .calculatorTool .screens, main .context .navigation .dualDivs .leftNavigate .tools .converterTool .screens {
+  margin: 10px auto auto 25px;
+  width: 150px;
+  height: 60px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .calculatorTool .screens .operationScreen, main .context .navigation .dualDivs .leftNavigate .tools .converterTool .screens .operationScreen {
+  width: 200px;
+  height: 25px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .calculatorTool .screens .operationScreen .operationInput, main .context .navigation .dualDivs .leftNavigate .tools .converterTool .screens .operationScreen .operationInput {
+  border: none;
+  width: 200px;
+  outline: none;
+  background: rgba(176, 176, 176, 0.579);
+  padding-left: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .calculatorTool .screens .answerScreen, main .context .navigation .dualDivs .leftNavigate .tools .converterTool .screens .answerScreen {
+  width: 200px;
+  height: 25px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .calculatorTool .screens .answerScreen .answerInput, main .context .navigation .dualDivs .leftNavigate .tools .converterTool .screens .answerScreen .answerInput {
+  position: absolute;
+  border: none;
+  width: 200px;
+  outline: none;
+  background: rgba(176, 176, 176, 0.579);
+  padding-left: 10px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .calculatorTool .screens .answerScreen ::-webkit-input-placeholder, main .context .navigation .dualDivs .leftNavigate .tools .converterTool .screens .answerScreen ::-webkit-input-placeholder {
+  font-size: 20px;
+  color: black;
+  padding-left: 170px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .calculatorTool .screens .answerScreen :-ms-input-placeholder, main .context .navigation .dualDivs .leftNavigate .tools .converterTool .screens .answerScreen :-ms-input-placeholder {
+  font-size: 20px;
+  color: black;
+  padding-left: 170px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .calculatorTool .screens .answerScreen ::-ms-input-placeholder, main .context .navigation .dualDivs .leftNavigate .tools .converterTool .screens .answerScreen ::-ms-input-placeholder {
+  font-size: 20px;
+  color: black;
+  padding-left: 170px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .calculatorTool .screens .answerScreen ::placeholder, main .context .navigation .dualDivs .leftNavigate .tools .converterTool .screens .answerScreen ::placeholder {
+  font-size: 20px;
+  color: black;
+  padding-left: 170px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .calculatorTool .digitButtons, main .context .navigation .dualDivs .leftNavigate .tools .converterTool .digitButtons {
+  margin: 10px auto auto 25px;
+  width: 210px;
+  height: 60%;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .calculatorTool .digitButtons .firstButtons, main .context .navigation .dualDivs .leftNavigate .tools .converterTool .digitButtons .firstButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .calculatorTool .digitButtons .firstButtons button, main .context .navigation .dualDivs .leftNavigate .tools .converterTool .digitButtons .firstButtons button {
+  width: 40px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  outline: none;
+  border: none;
+  background: #0d0d4e;
+  color: white;
+  cursor: pointer;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .calculatorTool .digitButtons .firstButtons button:hover, main .context .navigation .dualDivs .leftNavigate .tools .converterTool .digitButtons .firstButtons button:hover {
+  background: #0202a3;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .calculatorTool .digitButtons .otherButtons, main .context .navigation .dualDivs .leftNavigate .tools .converterTool .digitButtons .otherButtons {
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .calculatorTool .digitButtons .otherButtons button, main .context .navigation .dualDivs .leftNavigate .tools .converterTool .digitButtons .otherButtons button {
+  width: 40px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  outline: none;
+  border: none;
+  background: #0d0d4e;
+  color: white;
+  cursor: pointer;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .calculatorTool .digitButtons .otherButtons button:hover, main .context .navigation .dualDivs .leftNavigate .tools .converterTool .digitButtons .otherButtons button:hover {
+  background: #0202a3;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .converterTool .selectCurrency {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .converterTool .selectCurrency select {
+  margin-top: 15px;
+  width: 110px;
+  height: 20px;
+  border: 1px solid gray;
+  outline: none;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .converterTool .selectCurrency .arrow {
+  margin-top: 12px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .converterTool .selectCurrency label {
+  position: absolute;
+  font-size: 13px;
+  top: -2px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .converterTool .amount {
+  position: relative;
+  width: 100%;
+  height: 25px;
+  margin-top: 15px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .converterTool .amount input {
+  width: 180px;
+  height: 20px;
+  margin-left: 30px;
+  outline: none;
+  padding-left: 10px;
+  font-size: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .converterTool .labelName {
+  position: absolute;
+  font-size: 13px;
+  top: -15px;
+  left: 30px;
+}
+
+main .context .navigation .dualDivs .leftNavigate .tools .converterTool .submit {
+  width: 190px;
+  margin-left: 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: rgba(13, 5, 104, 0.915);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+main .context .navigation .dualDivs .rightNavigate {
+  width: 40%;
+  height: inherit;
+  background: pink;
+}
+/*# sourceMappingURL=style.css.map */
