@@ -8,7 +8,14 @@ let dualDivs = document.querySelector('.dualDivs');
 
 let header = document.getElementById('header');
 
-let icon = document.querySelector('#icon')
+let icon = document.querySelector('#icon');
+
+let bell = document.getElementById('bell');
+
+let caret = document.getElementById('caret');
+
+let divTarget = document.querySelectorAll('div')
+
 
 para.style.marginLeft = '0px';
 para.style.background = 'black';
@@ -16,6 +23,10 @@ iconsRepresentation.style.background = 'rgba(13, 5, 104, 0.915)';
 dualDivs.style.background = 'white';
 header.style.background = 'white';
 icon.style.color = 'black';
+bell.style.color = 'black';
+caret.style.color = 'black';
+// divTarget.style.background = 'white'
+
 
 
 para.addEventListener('click', function () {
@@ -28,6 +39,8 @@ para.addEventListener('click', function () {
         dualDivs.style.background = 'black';
         header.style.background = 'black';
         icon.style.color = 'white';
+        bell.style.color = 'white';
+        caret.style.color = 'white';
 
 
 
@@ -39,13 +52,21 @@ para.addEventListener('click', function () {
         dualDivs.style.background = 'white';
         header.style.background = 'white';
         icon.style.color = 'black';
-
-
-
-
-
+        bell.style.color = 'black';
+        caret.style.color = 'black';
 
     }
+
+
+    divTarget.forEach(divs => {
+        divs.style.background = 'white';
+        if (divs.style.background == 'white'){
+               divs.style.background = 'black'
+        }else{
+            divs.style.background = 'white';  
+        }
+    })
+
 })
 
 
