@@ -1049,6 +1049,470 @@ main .context .navigation .dualDivs .leftNavigate .tools .converterTool .submit 
 main .context .navigation .dualDivs .rightNavigate {
   width: 40%;
   height: inherit;
-  background: pink;
+}
+
+main .context .navigation .dualDivs .rightNavigate .wrapper {
+  width: 100%;
+  height: 260px;
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+          box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+}
+
+main .context .navigation .dualDivs .rightNavigate .wrapper header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 30px 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .context .navigation .dualDivs .rightNavigate .wrapper .currentDate {
+  font-size: 1.45rem;
+  margin-top: -70px;
+}
+
+main .context .navigation .dualDivs .rightNavigate .wrapper .calendar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+main .context .navigation .dualDivs .rightNavigate .wrapper header .icon span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  background: lightgray;
+  font-size: 1.9rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main .context .navigation .dualDivs .rightNavigate .wrapper .con span:last-child {
+  margin-right: -10px;
+}
+
+main .context .navigation .dualDivs .rightNavigate .wrapper header .icon span:hover {
+  background: whitesmoke;
+}
+
+main .context .navigation .dualDivs .rightNavigate .wrapper header .currentDate {
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+main .context .navigation .dualDivs .rightNavigate .wrapper .calendar {
+  padding: 10px;
+  margin-top: -60px;
+}
+
+main .context .navigation .dualDivs .rightNavigate .wrapper .calendar .days {
+  margin-bottom: 5px;
+}
+
+main .context .navigation .dualDivs .rightNavigate .wrapper .calendar li {
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+
+main .context .navigation .dualDivs .rightNavigate .wrapper .calendar .weeks li {
+  font-weight: 500;
+  cursor: default;
+}
+
+main .context .navigation .dualDivs .rightNavigate .wrapper .calendar .days li {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 5px;
+}
+
+main .context .navigation .dualDivs .rightNavigate .wrapper .days li.inactive {
+  color: brown;
+}
+
+main .context .navigation .dualDivs .rightNavigate .wrapper .days li.active {
+  color: white;
+}
+
+main .context .navigation .dualDivs .rightNavigate .wrapper .days li::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 20px;
+  width: 20px;
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main .context .navigation .dualDivs .rightNavigate .wrapper .days li.active::before {
+  background: #f810f8;
+}
+
+main .context .navigation .dualDivs .rightNavigate .wrapper .days li:not(.active):hover::before {
+  background: gray;
+}
+
+main .context .navigation .dualDivs .rightNavigate .wrapper .days li :hover::before {
+  background: #b5b2b2;
+}
+
+main .context .navigation .dualDivs .rightNavigate .paragraph {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .context .navigation .dualDivs .rightNavigate .paragraph p {
+  font-weight: 600;
+}
+
+main .context .navigation .dualDivs .rightNavigate .paragraph .event {
+  padding: 3px;
+  border: none;
+  color: white;
+  background: rgba(13, 5, 104, 0.915);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+main .context .navigation .dualDivs .rightNavigate .weatherStatistics {
+  width: 100%;
+  height: 240px;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+          box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+  background-image: url(/image/weather.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainContainer {
+  background: transparent;
+  width: 30%;
+  height: 70vh;
+  margin: 10px auto;
+  position: relative;
+}
+
+.mainContainer .secondDiv {
+  width: 410px;
+  height: 600px;
+  margin: auto;
+  margin-top: 0px;
+  background: rgba(0, 0, 108, 0.87);
+  position: relative;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(116, 116, 116, 0.464);
+          box-shadow: 1px 1px 2px 1px rgba(116, 116, 116, 0.464);
+}
+
+.mainContainer .secondDiv .mainScreen {
+  width: 75%;
+  height: 100px;
+  background: #019801;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  border-radius: 5px;
+}
+
+.mainContainer .secondDiv .mainScreen .operationSense {
+  margin-top: 5px;
+}
+
+.mainContainer .secondDiv .mainScreen input {
+  width: 95%;
+  height: 45px;
+  margin-left: 8px;
+  border: none;
+  outline: none;
+  background: #019801;
+}
+
+.mainContainer .secondDiv .mainScreen ::-webkit-input-placeholder {
+  color: black;
+  font-size: 16px;
+}
+
+.mainContainer .secondDiv .mainScreen :-ms-input-placeholder {
+  color: black;
+  font-size: 16px;
+}
+
+.mainContainer .secondDiv .mainScreen ::-ms-input-placeholder {
+  color: black;
+  font-size: 16px;
+}
+
+.mainContainer .secondDiv .mainScreen ::placeholder {
+  color: black;
+  font-size: 16px;
+}
+
+.mainContainer .secondDiv .powerButton {
+  width: 75%;
+  height: 70px;
+  background: transparent;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainContainer .secondDiv .powerButton button {
+  width: 40px;
+  height: 25px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  background: #0a8fbb;
+}
+
+.mainContainer .secondDiv .powerButton button:hover {
+  background: white;
+  color: #0a8fbb;
+}
+
+.mainContainer .secondDiv .powerButton .replayBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.mainContainer .secondDiv .arithmeticScientific {
+  width: 80%;
+  height: 340px;
+  background: transparent;
+  position: absolute;
+  top: 230px;
+  left: 43px;
+  border-radius: 5px;
+}
+
+.mainContainer .secondDiv .arithmeticScientific .arithScien {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.mainContainer .secondDiv .arithmeticScientific .arithScien button {
+  width: 50px;
+  height: 25px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  margin-left: 14px;
+  background: #0a8fbb;
+}
+
+.mainContainer .secondDiv .arithmeticScientific .arithScien button:hover {
+  background: white;
+  color: #0a8fbb;
+}
+
+.mainContainer .secondDiv .arithmeticScientific .arithScien .firstBtn {
+  margin-left: 0px;
+}
+
+.mainContainer .secondDiv .arithmeticScientific .arithScien #firstBtn, .mainContainer .secondDiv .arithmeticScientific .arithScien #firsBtn, .mainContainer .secondDiv .arithmeticScientific .arithScien #firBtn, .mainContainer .secondDiv .arithmeticScientific .arithScien #fitBtn {
+  margin-left: 0px;
+}
+
+.mainContainer .secondDiv .arithmeticScientific .arithScien .DEL, .mainContainer .secondDiv .arithmeticScientific .arithScien .AC, .mainContainer .secondDiv .arithmeticScientific .arithScien .Ans, .mainContainer .secondDiv .arithmeticScientific .arithScien .equal {
+  background: yellow;
+  color: black;
+}
+
+.mainContainer .secondDiv .arithmeticScientific .arithScien .DEL:hover, .mainContainer .secondDiv .arithmeticScientific .arithScien .AC:hover, .mainContainer .secondDiv .arithmeticScientific .arithScien .Ans:hover, .mainContainer .secondDiv .arithmeticScientific .arithScien .equal:hover {
+  color: white;
+  background: #0a8fbb;
+}
+
+.contentCalendar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.contentCalendar .wrapper {
+  width: 450px;
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.422);
+          box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.422);
+}
+
+.contentCalendar .wrapper header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 30px 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contentCalendar .wrapper .currentDate {
+  font-size: 1.45rem;
+}
+
+.contentCalendar .wrapper .calendar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.contentCalendar .wrapper header .icon span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  background: lightgray;
+  font-size: 1.9rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.contentCalendar .wrapper header .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contentCalendar .wrapper .con span:last-child {
+  margin-right: -10px;
+}
+
+.contentCalendar .wrapper header .icon span:hover {
+  background: whitesmoke;
+}
+
+.contentCalendar .wrapper header .currentDate {
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.contentCalendar .wrapper .calendar {
+  padding: 20px;
+}
+
+.contentCalendar .wrapper .calendar .days {
+  margin-bottom: 20px;
+}
+
+.contentCalendar .wrapper .calendar li {
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+
+.contentCalendar .wrapper .calendar .weeks li {
+  font-weight: 500;
+  cursor: default;
+}
+
+.contentCalendar .wrapper .calendar .days li {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+
+.contentCalendar .wrapper .days li.inactive {
+  color: brown;
+}
+
+.contentCalendar .wrapper .days li.active {
+  color: white;
+}
+
+.contentCalendar .wrapper .days li::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.contentCalendar .wrapper .days li.active::before {
+  background: #f810f8;
+}
+
+.contentCalendar .wrapper .days li:not(.active):hover::before {
+  background: gray;
+}
+
+.contentCalendar .wrapper .days li :hover::before {
+  background: #b5b2b2;
 }
 /*# sourceMappingURL=style.css.map */

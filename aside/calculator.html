@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Utils / Calculator</title>
+    <link rel="shortcut icon" href="Images/img01_01.png" type="image/x-icon">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <main class="mainContainer">
+        <div class="secondDiv">
+            <div class="mainScreen">
+                <div class="operationSense">
+                    <input type="text" class="operationScreen"/>
+                </div>
+                <div class="answerSense">
+                    <input type="text" name="label" class="answerScreen" id="result" placeholder="0"/>
+                </div>
+            </div>
+            <div class="powerButton">
+                <div class="leftCommand">
+                    <button class="calFunction">2nd</button><br>
+                    <button>Calc</button>
+                </div>
+                <div class="roundDiv">
+                    <button class="replayBtn">Replay</button>
+                </div>
+                <div class="leftCommand">
+                    <button class="calFunction">On</button><br> 
+                    <button>Mode</button>
+                </div>
+
+            </div>
+            <div class="arithmeticScientific">
+                <div class="arithScien">
+                    <button class="firstBtn">Rand</button>
+                    <button class="scienceOps">Exp</button>
+                    <button class="sqrt scienceOps">sqrt</button>
+                    <button class="scienceOps">X^2</button>
+                    <button class="scienceOps">log</button>
+                </div>
+                <div class="arithScien">
+                    <button class="firstBtn">ln</button>
+                    <button class="scienceOps">hyp</button>
+                    <button class="scienceOps">sin</button>
+                    <button class="scienceOps">cos</button>
+                    <button class="scienceOps">tan</button>
+                </div>
+                <div class="arithScien">
+                    <button class="firstBtn">n!</button>
+                    <button class="scienceOps">cot</button>
+                    <button class="scienceOps">sec</button>
+                    <button class="calFunction">M-</button>
+                    <button class="calFunction">M+</button>
+                </div>
+                <div class="arithScien">
+                    <button class="digits" id="firBtn">7</button>
+                    <button class="digits">8</button>
+                    <button class="digits">9</button>
+                    <button class="DEL calFunction">DEL</button>
+                    <button class="AC calFunction">AC</button>
+                </div>
+                <div class="arithScien">
+                    <button class="digits" id="firsBtn">4</button>
+                    <button class="digits">5</button>
+                    <button class="digits">6</button>
+                    <button class="arithOps">*</button>
+                    <button class="arithOps">/</button>
+                </div>
+                <div class="arithScien">
+                    <button class="digits" id="fitBtn">1</button>
+                    <button class="digits">2</button>
+                    <button class="digits">3</button>
+                    <button class="arithOps">+</button>
+                    <button class="arithOps">-</button>
+                </div>
+                <div class="arithScien">
+                    <button class="digits" id="firstBtn">0</button>
+                    <button class="digits">.</button>
+                    <button class="scienceOps">x10^x</button>
+                    <button class="Ans arithOps" id="submit">Ans</button>
+                    <button class="= equal arithOps" id="equal">=</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/calcu.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+</body>
+</html>
