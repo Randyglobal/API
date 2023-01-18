@@ -144,32 +144,34 @@
                                 </div>
                                 <div class="digitButtons">
                                     <div class="firstButtons">
-                                        <button class="digit">ON</button>
-                                        <button class="digit">OFF</button>
+                                        <button class="powerOps ON">ON</button>
+                                        <button class="clearOps CL">CL</button>
+
+                                        <button class="powerOps OFF">OFF</button>
                                     </div>
                                     <div class="otherButtons">
-                                        <button class="digit">9</button>
+                                        <button class="digit" id="digit">9</button>
                                         <button class="digit">8</button>
                                         <button class="digit">7</button>
-                                        <button class="digit">%</button>
+                                        <button class="clearOps Del">Del</button>
                                     </div>
                                     <div class="otherButtons">
                                         <button class="digit">6</button>
                                         <button class="digit">5</button>
                                         <button class="digit">4</button>
-                                        <button class="digit">*</button>
+                                        <button class="operation *">*</button>
                                     </div>
                                     <div class="otherButtons">
                                         <button class="digit">3</button>
                                         <button class="digit">2</button>
                                         <button class="digit">1</button>
-                                        <button class="digit">-</button>
+                                        <button class="operation - ">-</button>
                                     </div>
                                     <div class="otherButtons">
                                         <button class="digit">0</button>
                                         <button class="digit">.</button>
-                                        <button class="digit">=</button>
-                                        <button class="digit">+</button>
+                                        <button class="operation =">=</button>
+                                        <button class="operation +">+</button>
                                     </div>
 
 
@@ -208,7 +210,7 @@
                                 </div>
                                 <div class="amount">
                                     <label class="labelName" for="">Enter Amount</label>
-                                    <input type="text" name="" id="">
+                                    <input class="operationInput" type="text" name="" id="">
                                 </div>
                                 <button class="submit">Convert</button>
                                 <div class="digitButtons">
@@ -280,6 +282,7 @@
 
         </div>
     </main>
+    <script src="js/calculator.js"></script>
 </body>
 
 </html>
