@@ -1515,4 +1515,66 @@ main .context .navigation .dualDivs .rightNavigate .weatherStatistics {
 .contentCalendar .wrapper .days li :hover::before {
   background: #b5b2b2;
 }
+
+footer {
+  position: absolute;
+  width: 42%;
+  top: 37.5rem;
+  left: 17rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer ul li {
+  display: inline;
+  list-style: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+  font-weight: 600;
+}
+
+footer .lightDark {
+  position: relative;
+  width: 80px;
+  height: 20px;
+  -webkit-box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+          box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+  border-radius: 30px;
+}
+
+footer .lightDark p {
+  position: absolute;
+  z-index: 4;
+  width: 30px;
+  height: 20px;
+  border-radius: 40px;
+  -webkit-box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+          box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+footer .lightDark .fa-solid {
+  position: absolute;
+  color: white;
+  top: 2px;
+  font-size: 15px;
+}
+
+footer .lightDark .fa-moon {
+  position: absolute;
+  color: black;
+  top: 2px;
+  left: 60px;
+  font-size: 15px;
+}
 /*# sourceMappingURL=style.css.map */

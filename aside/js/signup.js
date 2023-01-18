@@ -40,3 +40,4 @@ confirmPassword.type = 'password';
 
     }
 });
+

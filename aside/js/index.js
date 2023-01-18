@@ -6,7 +6,6 @@ eye.style.display = 'block';
 eyeClosed.style.display = 'none';
 password.type = 'password';
 
-
 eye.addEventListener('click', function () {
     if (password.type = 'password' && eyeClosed.style.display == 'none') {
         password.type = 'text';
@@ -31,7 +30,7 @@ eyeClosed.addEventListener('click', function () {
         eyeClosed.style.display = 'none';
         password.type = 'password';
 
-
     }
 });
+
 
