@@ -323,7 +323,7 @@ main {
                                 height: 60px;
 
                                 .operationScreen {
-                                    @include inputStyle;
+                                    @include inputStyle1;
 
                                     .operationInput {
                                         @include answeOperation;
@@ -333,7 +333,7 @@ main {
                                 }
 
                                 .answerScreen {
-                                    @include inputStyle;
+                                    @include inputStyle1;
 
                                     .answerInput {
                                         position: absolute;

@@ -11,7 +11,7 @@ body {
   background-size: cover;
 }
 
-body .container {
+body .containerDiv {
   -webkit-transition: 10cs;
   transition: 10cs;
   width: 900px;
@@ -24,17 +24,17 @@ body .container {
           box-shadow: 2px 2px 1px 1px rgba(207, 255, 251, 0.091);
 }
 
-body .container .formControl {
+body .containerDiv .formControl {
   width: 40%;
   height: inherit;
   background: #5fd7ff;
 }
 
-body .container .formControl .signin {
+body .containerDiv .formControl .signin {
   margin: 290px auto auto 60px;
 }
 
-body .container .formControl .signin button {
+body .containerDiv .formControl .signin button {
   width: 250px;
   height: 40px;
   border: 1px solid black;
@@ -47,38 +47,38 @@ body .container .formControl .signin button {
   cursor: pointer;
 }
 
-body .container .formControl .signin button a {
+body .containerDiv .formControl .signin button a {
   text-decoration: none;
   color: #5fd7ff;
   font-weight: 600;
 }
 
-body .container .formControl .signin h1 {
+body .containerDiv .formControl .signin h1 {
   font-size: 30px;
 }
 
-body .container .formClick {
+body .containerDiv .formClick {
   width: 60%;
   height: inherit;
   background: white;
 }
 
-body .container form {
+body .containerDiv form {
   margin: 150px auto auto 100px;
 }
 
-body .container form h1 {
+body .containerDiv form h1 {
   font-size: 30px;
 }
 
-body .container form .inputs {
+body .containerDiv form .inputs {
   width: 200px;
   height: 100px;
   position: relative;
   top: 10px;
 }
 
-body .container form .inputs .inputForm {
+body .containerDiv form .inputs .inputForm {
   padding-left: 10px;
   width: 350px;
   height: 30px;
@@ -89,26 +89,26 @@ body .container form .inputs .inputForm {
   font-size: 14px;
 }
 
-body .container form .inputs .inputForm:focus {
+body .containerDiv form .inputs .inputForm:focus {
   border: 1px solid #5fd7ff;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .container form .inputs .formLabel {
+body .containerDiv form .inputs .formLabel {
   position: absolute;
   left: 10px;
   top: 24px;
 }
 
-body .container form .inputs .label {
+body .containerDiv form .inputs .label {
   top: 77px;
 }
 
-body .container form .inputs .inputForm.active .formLabel,
-body .container form .inputs .inputForm:focus + .formLabel,
-body .container form .inputs .inputForm:not([value=""]) + .formLabel,
-body .container form .inputs .inputForm.active + .label {
+body .containerDiv form .inputs .inputForm.active .formLabel,
+body .containerDiv form .inputs .inputForm:focus + .formLabel,
+body .containerDiv form .inputs .inputForm:not([value=""]) + .formLabel,
+body .containerDiv form .inputs .inputForm.active + .label {
   background: white;
   height: 20px;
   width: 130px;
@@ -118,10 +118,10 @@ body .container form .inputs .inputForm.active + .label {
   transition: 1s;
 }
 
-body .container form .inputs .inputForm.active .label,
-body .container form .inputs .inputForm:focus + .label,
-body .container form .inputs .inputForm:not([value=""]) + .label,
-body .container form .inputs .inputForm.active + .label {
+body .containerDiv form .inputs .inputForm.active .label,
+body .containerDiv form .inputs .inputForm:focus + .label,
+body .containerDiv form .inputs .inputForm:not([value=""]) + .label,
+body .containerDiv form .inputs .inputForm.active + .label {
   background: white;
   height: 20px;
   width: 70px;
@@ -129,7 +129,7 @@ body .container form .inputs .inputForm.active + .label {
   color: #5fd7ff;
 }
 
-body .container form .icon {
+body .containerDiv form .icon {
   height: 10px;
   left: 360px;
   top: 300px;
@@ -139,25 +139,25 @@ body .container form .icon {
   z-index: 2;
 }
 
-body .container form .eyeClosed {
+body .containerDiv form .eyeClosed {
   position: absolute;
   top: 0px;
   left: -1px;
   background: white;
 }
 
-body .container form .bottomButton {
+body .containerDiv form .bottomButton {
   width: 360px;
   height: 15px;
   margin-top: 30px;
 }
 
-body .container form .bottomButton a {
+body .containerDiv form .bottomButton a {
   text-decoration: none;
   color: #5fd7ff;
 }
 
-body .container form .bottomButton button {
+body .containerDiv form .bottomButton button {
   border: none;
   outline: none;
   font-size: 15px;
@@ -165,11 +165,11 @@ body .container form .bottomButton button {
   background: white;
 }
 
-body .container form .bottomButton .button {
+body .containerDiv form .bottomButton .button {
   margin-left: 180px;
 }
 
-body .container form .login {
+body .containerDiv form .login {
   width: 360px;
   height: 40px;
   border: 1px solid black;
@@ -182,12 +182,12 @@ body .container form .login {
   cursor: pointer;
 }
 
-body .container form .login a {
+body .containerDiv form .login a {
   text-decoration: none;
   color: white;
 }
 
-body .container form .signinOptions {
+body .containerDiv form .signinOptions {
   width: 20%;
   height: 30px;
   margin: 20px auto auto 140px;
@@ -199,7 +199,7 @@ body .container form .signinOptions {
           justify-content: space-between;
 }
 
-body .container form .signinOptions .signinIcon {
+body .containerDiv form .signinOptions .signinIcon {
   width: 30px;
   height: inherit;
   background-image: url(/image/images.png);
@@ -207,7 +207,7 @@ body .container form .signinOptions .signinIcon {
   background-size: cover;
 }
 
-body .container form .signinOptions .signIcon {
+body .containerDiv form .signinOptions .signIcon {
   width: 30px;
   height: inherit;
   background-image: url(/image/facebook.png);
@@ -240,47 +240,50 @@ body .container .formClick {
   background: white;
 }
 
-body .container .form {
+body .container .formClick .form {
   margin: 80px auto auto 0px;
   text-align: center;
 }
 
-body .container .form h1 {
+body .container .formClick .form h1 {
   font-size: 30px;
 }
 
-body .container .form .firstLast {
+body .container .formClick .form .firstLast {
   position: relative;
 }
 
-body .container .form .firstLast .inputForm {
+body .container .formClick .form .firstLast .inputForm {
   width: 167px;
   height: 30px;
   margin-top: 20px;
-  width: 200px;
-  height: 25px;
+  padding-left: 10px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 8px;
+  font-size: 14px;
 }
 
-body .container .form .firstLast .inputForm:focus {
+body .container .formClick .form .firstLast .inputForm:focus {
   border: 1px solid #5fd7ff;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .container .form .firstLast .labelForm {
+body .container .formClick .form .firstLast .labelForm {
   position: absolute;
   left: 7rem;
   top: 23px;
 }
 
-body .container .form .firstLast .formText {
+body .container .formClick .form .firstLast .formText {
   left: 18rem;
 }
 
-body .container .form .firstLast .inputForm.active .labelForm,
-body .container .form .firstLast .inputForm:focus + .labelForm,
-body .container .form .firstLast .inputForm:not([value=""]) + .labelForm,
-body .container .form .firstLast .inputForm.active + .label {
+body .container .formClick .form .firstLast .inputForm.active .labelForm,
+body .container .formClick .form .firstLast .inputForm:focus + .labelForm,
+body .container .formClick .form .firstLast .inputForm:not([value=""]) + .labelForm,
+body .container .formClick .form .firstLast .inputForm.active + .label {
   width: 130px;
   top: 5px;
   background: white;
@@ -290,34 +293,37 @@ body .container .form .firstLast .inputForm.active + .label {
   transition: 1s;
 }
 
-body .container .form .username {
+body .container .formClick .form .username {
   position: relative;
 }
 
-body .container .form .username .labelForm {
+body .container .formClick .form .username .labelForm {
   position: absolute;
   left: 7rem;
   top: 23px;
 }
 
-body .container .form .username .inputForm {
+body .container .formClick .form .username .inputForm {
   width: 350px;
   height: 30px;
   margin-top: 20px;
-  width: 200px;
-  height: 25px;
+  padding-left: 10px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 8px;
+  font-size: 14px;
 }
 
-body .container .form .username .inputForm:focus {
+body .container .formClick .form .username .inputForm:focus {
   border: 1px solid #5fd7ff;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .container .form .username .inputForm.active .labelForm,
-body .container .form .username .inputForm:focus + .labelForm,
-body .container .form .username .inputForm:not([value=""]) + .labelForm,
-body .container .form .username .inputForm.active + .label {
+body .container .formClick .form .username .inputForm.active .labelForm,
+body .container .formClick .form .username .inputForm:focus + .labelForm,
+body .container .formClick .form .username .inputForm:not([value=""]) + .labelForm,
+body .container .formClick .form .username .inputForm.active + .label {
   width: 90px;
   top: 5px;
   background: white;
@@ -327,7 +333,7 @@ body .container .form .username .inputForm.active + .label {
   transition: 1s;
 }
 
-body .container .form .inputsLayout {
+body .container .formClick .form .inputsLayout {
   width: 200px;
   height: 70px;
   position: relative;
@@ -335,34 +341,37 @@ body .container .form .inputsLayout {
   left: 90px;
 }
 
-body .container .form .inputsLayout .inputForm {
+body .container .formClick .form .inputsLayout .inputForm {
   width: 350px;
   height: 30px;
   margin-top: 20px;
-  width: 200px;
-  height: 25px;
+  padding-left: 10px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 8px;
+  font-size: 14px;
 }
 
-body .container .form .inputsLayout .inputForm:focus {
+body .container .formClick .form .inputsLayout .inputForm:focus {
   border: 1px solid #5fd7ff;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .container .form .inputsLayout .formLabel {
+body .container .formClick .form .inputsLayout .formLabel {
   position: absolute;
   left: 23px;
   top: 23px;
 }
 
-body .container .form .inputsLayout .label {
+body .container .formClick .form .inputsLayout .label {
   top: 77px;
 }
 
-body .container .form .inputsLayout .inputForm.active .formLabel,
-body .container .form .inputsLayout .inputForm:focus + .formLabel,
-body .container .form .inputsLayout .inputForm:not([value=""]) + .formLabel,
-body .container .form .inputsLayout .inputForm.active + .label {
+body .container .formClick .form .inputsLayout .inputForm.active .formLabel,
+body .container .formClick .form .inputsLayout .inputForm:focus + .formLabel,
+body .container .formClick .form .inputsLayout .inputForm:not([value=""]) + .formLabel,
+body .container .formClick .form .inputsLayout .inputForm.active + .label {
   width: 60px;
   left: 10px;
   top: 5px;
@@ -373,7 +382,7 @@ body .container .form .inputsLayout .inputForm.active + .label {
   transition: 1s;
 }
 
-body .container .form .icon {
+body .container .formClick .form .icon {
   height: 10px;
   top: 400px;
   left: 21rem;
@@ -382,14 +391,14 @@ body .container .form .icon {
   z-index: 2;
 }
 
-body .container .form .eyeClosed {
+body .container .formClick .form .eyeClosed {
   position: absolute;
   top: 0px;
   left: -1px;
   background: white;
 }
 
-body .container .form .termsCondition {
+body .container .formClick .form .termsCondition {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,24 +406,24 @@ body .container .form .termsCondition {
   margin-top: 30px;
 }
 
-body .container .form .termsCondition input {
+body .container .formClick .form .termsCondition input {
   margin-left: 7rem;
   cursor: pointer;
 }
 
-body .container .form .termsCondition .paragraph {
+body .container .formClick .form .termsCondition .paragraph {
   font-weight: 600;
   margin-left: 5px;
   margin-top: 3px;
 }
 
-body .container .form .termsCondition .paragraph a {
+body .container .formClick .form .termsCondition .paragraph a {
   text-decoration: none;
   color: blue;
   margin-left: 5px;
 }
 
-body .container .form .login {
+body .container .formClick .form .login {
   width: 360px;
   height: 40px;
   border: 1px solid black;
@@ -427,12 +436,12 @@ body .container .form .login {
   cursor: pointer;
 }
 
-body .container .form .login a {
+body .container .formClick .form .login a {
   text-decoration: none;
   color: white;
 }
 
-body .container .signinOption {
+body .container .formClick .signinOption {
   width: 20%;
   height: 30px;
   margin: 10px auto;
@@ -444,7 +453,7 @@ body .container .signinOption {
           justify-content: space-between;
 }
 
-body .container .signinOption .signinIcon {
+body .container .formClick .signinOption .signinIcon {
   width: 30px;
   height: inherit;
   background-image: url(/image/images.png);
@@ -452,7 +461,7 @@ body .container .signinOption .signinIcon {
   background-size: cover;
 }
 
-body .container .signinOption .signIcon {
+body .container .formClick .signinOption .signIcon {
   width: 30px;
   height: inherit;
   background-image: url(/image/facebook.png);

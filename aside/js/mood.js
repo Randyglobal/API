@@ -14,7 +14,11 @@ let bell = document.getElementById('bell');
 
 let caret = document.getElementById('caret');
 
-let divTarget = document.querySelectorAll('div')
+let heading = document.querySelector('.heading');
+
+let welcome = document.querySelector('.welcome');
+
+let welcomeProfile = document.querySelector('.welcomeProfile');
 
 
 para.style.marginLeft = '0px';
@@ -25,7 +29,11 @@ header.style.background = 'white';
 icon.style.color = 'black';
 bell.style.color = 'black';
 caret.style.color = 'black';
-// divTarget.style.background = 'white'
+heading.style.color = 'black';
+welcome.style.color = 'black';
+welcomeProfile.style.background = 'white';
+
+
 
 
 
@@ -41,6 +49,15 @@ para.addEventListener('click', function () {
         icon.style.color = 'white';
         bell.style.color = 'white';
         caret.style.color = 'white';
+        heading.style.color = 'white';
+        welcome.style.color = 'white';
+        welcomeProfile.style.background = 'black';
+        welcomeProfile.style.boxShadow = '1px 3px 4px 1px white';
+
+
+
+
+
 
 
 
@@ -54,18 +71,24 @@ para.addEventListener('click', function () {
         icon.style.color = 'black';
         bell.style.color = 'black';
         caret.style.color = 'black';
+        heading.style.color = 'black';
+        welcome.style.color = 'black';
+        welcomeProfile.style.background = 'white';
+
+
+
 
     }
 
 
-    divTarget.forEach(divs => {
-        divs.style.background = 'white';
-        if (divs.style.background == 'white'){
-               divs.style.background = 'black'
-        }else{
-            divs.style.background = 'white';  
-        }
-    })
+    //     heading.forEach(head => {
+    //         head.style.color = 'white';
+    //         if (head.style.color == 'white'){
+    //             head.style.color = 'black'
+    //         }else{
+    //             head.style.color = 'white';  
+    //         }
+    //     })
 
 })
 

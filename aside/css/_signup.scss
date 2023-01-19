@@ -10,12 +10,12 @@ body {
         margin: 10px auto;
         display: flex;
         box-shadow: 2px 2px 1px 1px rgba(207, 255, 251, 0.091);
+
         // border: none;
         .formClick {
             @include widthHeight (60%);
             background: $textColor;
 
-        }
 
         .form {
             margin: 80px auto auto 0px;
@@ -24,62 +24,68 @@ body {
             h1 {
                 font-size: 30px;
             }
-            .firstLast{
+
+            .firstLast {
                 position: relative;
 
-                .inputForm{
+                .inputForm {
                     width: 167px;
                     height: 30px;
                     margin-top: 20px;
-                   @include inputStyle;
+                    @include inputStyle;
 
                 }
 
-                .inputForm:focus{
+                .inputForm:focus {
                     @include focusStyle;
                 }
 
                 .labelForm {
-                    @include labelStyle (23px, 7rem);  
-                 }
-                 .formText{
-                    left: 18rem;
-                 }
+                    @include labelStyle (23px, 7rem);
+                }
 
-                 .inputForm.active .labelForm,
-                .inputForm:focus + .labelForm, 
-                .inputForm:not([value=""]) + .labelForm,
-                .inputForm.active + .label{
+                .formText {
+                    left: 18rem;
+                }
+
+                .inputForm.active .labelForm,
+                .inputForm:focus+.labelForm,
+                .inputForm:not([value=""])+.labelForm,
+                .inputForm.active+.label {
                     width: 130px;
                     // left: 10px;
                     top: 5px;
-                   @include inputLable;
+                    @include inputLable;
                 }
             }
 
-            .username{
+            .username {
                 position: relative;
+
                 .labelForm {
-                    @include labelStyle (23px, 7rem);  
-                 }
-                 .inputForm{
+                    @include labelStyle (23px, 7rem);
+                }
+
+                .inputForm {
                     width: 350px;
                     height: 30px;
                     margin-top: 20px;
-                   @include inputStyle;
+                    @include inputStyle;
 
                 }
-                .inputForm:focus{
+
+                .inputForm:focus {
                     @include focusStyle;
                 }
+
                 .inputForm.active .labelForm,
-                .inputForm:focus + .labelForm, 
-                .inputForm:not([value=""]) + .labelForm,
-                .inputForm.active + .label{
+                .inputForm:focus+.labelForm,
+                .inputForm:not([value=""])+.labelForm,
+                .inputForm.active+.label {
                     width: 90px;
                     // left: 10px;
                     top: 5px;
-                   @include inputLable;
+                    @include inputLable;
                 }
 
             }
@@ -96,30 +102,33 @@ body {
                     width: 350px;
                     height: 30px;
                     margin-top: 20px;
-                   @include inputStyle;
+                    @include inputStyle;
                 }
-                .inputForm:focus{
+
+                .inputForm:focus {
                     @include focusStyle;
                 }
 
                 .formLabel {
-                   @include labelStyle (23px, 23px);
+                    @include labelStyle (23px, 23px);
                 }
-                .label{
+
+                .label {
                     top: 77px;
-                }  
-                
+                }
+
                 .inputForm.active .formLabel,
-                .inputForm:focus + .formLabel, 
-                .inputForm:not([value=""]) + .formLabel,
-                .inputForm.active + .label{
+                .inputForm:focus+.formLabel,
+                .inputForm:not([value=""])+.formLabel,
+                .inputForm.active+.label {
                     width: 60px;
                     left: 10px;
                     top: 5px;
-                   @include inputLable;
+                    @include inputLable;
                 }
             }
-            .icon{
+
+            .icon {
                 height: 10px;
                 top: 400px;
                 left: 21rem;
@@ -128,37 +137,39 @@ body {
                 z-index: 2;
             }
 
-            .eyeClosed{
+            .eyeClosed {
                 position: absolute;
                 top: 0px;
                 left: -1px;
                 background: white;
             }
-            .termsCondition{
+
+            .termsCondition {
                 // text-align: center;
                 display: flex;
                 height: 30px;
                 margin-top: 30px;
                 // background: red;
 
-                input{
+                input {
                     margin-left: 7rem;
                     cursor: pointer;
                 }
-            .paragraph{
-                font-weight: 600;    
-                margin-left: 5px;
-                margin-top: 3px;
 
-                a{
-                    text-decoration: none;
-                    color: blue;
+                .paragraph {
+                    font-weight: 600;
                     margin-left: 5px;
+                    margin-top: 3px;
+
+                    a {
+                        text-decoration: none;
+                        color: blue;
+                        margin-left: 5px;
+                    }
                 }
             }
-        }
 
-            .login{
+            .login {
                 width: 360px;
                 height: 40px;
                 border: 1px solid black;
@@ -169,7 +180,8 @@ body {
                 border-radius: 30px;
                 background: $inputColor;
                 cursor: pointer;
-                a{
+
+                a {
                     text-decoration: none;
                     color: $textColor;
                 }
@@ -177,21 +189,22 @@ body {
 
         }
 
-        .signinOption{
+        .signinOption {
             width: 20%;
             height: 30px;
             margin: 10px auto;
             display: flex;
             justify-content: space-between;
 
-            .signinIcon{
+            .signinIcon {
                 width: 30px;
                 height: inherit;
                 background-image: url(/image/images.png);
                 background-repeat: no-repeat;
                 background-size: cover;
             }
-            .signIcon{
+
+            .signIcon {
                 width: 30px;
                 height: inherit;
                 background-image: url(/image/facebook.png);
@@ -200,14 +213,15 @@ body {
             }
         }
 
-        
+    }
         .formControl {
             @include widthHeight (40%);
             background: $bodyBackground;
 
-            .signin{
-                margin: 250px auto auto 60px;   
-                button{
+            .signin {
+                margin: 250px auto auto 60px;
+
+                button {
                     width: 250px;
                     height: 40px;
                     border: 1px solid black;
@@ -218,18 +232,20 @@ body {
                     border-radius: 30px;
                     background: $textColor;
                     cursor: pointer;
-                    a{
+
+                    a {
                         text-decoration: none;
                         color: $bodyBackground;
                         font-weight: 600;
                     }
                 }
-            h1 {
-                font-size: 30px;
-               
+
+                h1 {
+                    font-size: 30px;
+
+                }
+
             }
-           
         }
-    }
     }
 }
