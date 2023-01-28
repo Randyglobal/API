@@ -167,11 +167,64 @@ main {
                         @include headerStyle;
                         margin-left: 30px;
                     }
-
-                    .fa-caret-down:hover {
-                        transform: rotate(180deg);
-                        margin-top: 50px;
+                    .lightDark{
+                        position: relative;
+                        width: 80px;
+                        height: 20px;
+                        box-shadow: $box-shadow;
+                        border-radius: 30px;
+                        top: 15px;
+                        left: 20px;
+                
+                        p{
+                            position: absolute;
+                            z-index: 4;
+                            width: 30px;
+                            height: 20px;
+                            border-radius: 40px;
+                            box-shadow: $box-shadow;
+                            cursor: pointer;
+                            transition: 1s;
+                        }
+                        i{
+                            margin-left: 3px;
+                            margin-top: 0px;
+                        }
+                
+                        .fa-solid{
+                            position: absolute;
+                            color: white;
+                            top: 2px;
+                            font-size: 15px;
+                        }
+                        .fa-moon{
+                            position: absolute;
+                            color: black;
+                            top: 2px;
+                            left: 60px;
+                            font-size: 15px;
+                        }
                     }
+                    ul{
+                        box-shadow: $box-shadow;
+                        border-radius: 8px;
+                        position: absolute;
+                        left: 28rem;
+                        top: 2rem;
+                        height: 60px;
+                        width: 70px;
+                        li{
+                            display: block;
+                            list-style: none;
+                            a{
+                                text-decoration: none;
+                                margin-left: 10px;
+                                color: $box-shadow;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                
                 }
             }
 
@@ -189,7 +242,7 @@ main {
                         display: flex;
                         border-top-left-radius: 8px;
                         border-bottom-left-radius: 8px;
-                        box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+                        box-shadow: $box-shadow;
 
                         .welcome {
                             width: 250px;
@@ -250,7 +303,7 @@ main {
                     }
 
                     .events {
-                        @include eventsStyle (110px, transparent);
+                        @include eventsStyle (70px, transparent);
                         display: flex;
 
                         .box {

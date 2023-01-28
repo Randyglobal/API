@@ -20,18 +20,23 @@ let welcome = document.querySelector('.welcome');
 
 let welcomeProfile = document.querySelector('.welcomeProfile');
 
+let list = document.getElementById('list');
+
+let faCaret = document.querySelector('.faCaret')
+
 
 para.style.marginLeft = '0px';
 para.style.background = 'black';
 iconsRepresentation.style.background = 'rgba(13, 5, 104, 0.915)';
 dualDivs.style.background = 'white';
 header.style.background = 'white';
-icon.style.color = 'black';
+// icon.style.color = 'black';
 bell.style.color = 'black';
 caret.style.color = 'black';
 heading.style.color = 'black';
 welcome.style.color = 'black';
 welcomeProfile.style.background = 'white';
+list.style.display = 'none'
 
 
 
@@ -46,7 +51,7 @@ para.addEventListener('click', function () {
         iconsRepresentation.style.background = 'black';
         dualDivs.style.background = 'black';
         header.style.background = 'black';
-        icon.style.color = 'white';
+        // icon.style.color = 'white';
         bell.style.color = 'white';
         caret.style.color = 'white';
         heading.style.color = 'white';
@@ -68,7 +73,7 @@ para.addEventListener('click', function () {
         iconsRepresentation.style.background = 'rgba(13, 5, 104, 0.915)';
         dualDivs.style.background = 'white';
         header.style.background = 'white';
-        icon.style.color = 'black';
+        // icon.style.color = 'black';
         bell.style.color = 'black';
         caret.style.color = 'black';
         heading.style.color = 'black';
@@ -90,7 +95,14 @@ para.addEventListener('click', function () {
     //         }
     //     })
 
+});
+faCaret.addEventListener('click', function () {
+    if (list.style.display == 'none') {
+        list.style.display = 'block'
+
+    } else {
+        list.style.display = 'none'
+
+    }
 })
-
-
 

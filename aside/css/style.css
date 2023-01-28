@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(/image/istockphoto-1203327078-612x612.jpg);
+  background-image: url(/aside/image/);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -697,10 +697,71 @@ main .context .navigation header .tools .personalProfile {
   margin-left: 30px;
 }
 
-main .context .navigation header .tools .fa-caret-down:hover {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  margin-top: 50px;
+main .context .navigation header .tools .lightDark {
+  position: relative;
+  width: 80px;
+  height: 20px;
+  -webkit-box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+          box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+  border-radius: 30px;
+  top: 15px;
+  left: 20px;
+}
+
+main .context .navigation header .tools .lightDark p {
+  position: absolute;
+  z-index: 4;
+  width: 30px;
+  height: 20px;
+  border-radius: 40px;
+  -webkit-box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+          box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main .context .navigation header .tools .lightDark i {
+  margin-left: 3px;
+  margin-top: 0px;
+}
+
+main .context .navigation header .tools .lightDark .fa-solid {
+  position: absolute;
+  color: white;
+  top: 2px;
+  font-size: 15px;
+}
+
+main .context .navigation header .tools .lightDark .fa-moon {
+  position: absolute;
+  color: black;
+  top: 2px;
+  left: 60px;
+  font-size: 15px;
+}
+
+main .context .navigation header .tools ul {
+  -webkit-box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+          box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+  border-radius: 8px;
+  position: absolute;
+  left: 28rem;
+  top: 2rem;
+  height: 60px;
+  width: 70px;
+}
+
+main .context .navigation header .tools ul li {
+  display: block;
+  list-style: none;
+}
+
+main .context .navigation header .tools ul li a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
+  font-weight: 600;
 }
 
 main .context .navigation .dualDivs {
@@ -721,6 +782,7 @@ main .context .navigation .dualDivs .leftNavigate .welcomeProfile {
   height: 130px;
   background: white;
   margin-left: 30px;
+  margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -790,9 +852,10 @@ main .context .navigation .dualDivs .leftNavigate .welcomeProfile .notes .signs 
 
 main .context .navigation .dualDivs .leftNavigate .events {
   width: 90%;
-  height: 110px;
+  height: 70px;
   background: transparent;
   margin-left: 30px;
+  margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -852,6 +915,7 @@ main .context .navigation .dualDivs .leftNavigate .tools {
   height: 255px;
   background: transform;
   margin-left: 30px;
+  margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1536,54 +1600,5 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-footer ul li {
-  display: inline;
-  list-style: none;
-}
-
-footer ul li a {
-  text-decoration: none;
-  margin-left: 10px;
-  color: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
-  font-weight: 600;
-}
-
-footer .lightDark {
-  position: relative;
-  width: 80px;
-  height: 20px;
-  -webkit-box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
-          box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
-  border-radius: 30px;
-}
-
-footer .lightDark p {
-  position: absolute;
-  z-index: 4;
-  width: 30px;
-  height: 20px;
-  border-radius: 40px;
-  -webkit-box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
-          box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.351);
-  cursor: pointer;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-footer .lightDark .fa-solid {
-  position: absolute;
-  color: white;
-  top: 2px;
-  font-size: 15px;
-}
-
-footer .lightDark .fa-moon {
-  position: absolute;
-  color: black;
-  top: 2px;
-  left: 60px;
-  font-size: 15px;
 }
 /*# sourceMappingURL=style.css.map */

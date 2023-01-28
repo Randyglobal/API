@@ -17,7 +17,7 @@ btn.addEventListener('click', function(){
     }
     
     arrayObject.push(putItem);
-    localStorage.setItem(Username.value,JSON.stringify(arrayObject));
+    localStorage.setItem('user',JSON.stringify(arrayObject));
 })
 //     localStorage.setItem('username', Username.value);
 //     localStorage.setItem('password', Password.value);

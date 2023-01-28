@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="shortcut icon" href="image/UserLogo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="formClick">
+                <form class="form" action="" method="post">
+                    <h1>Sign up for an account</h1>
+                    <p>Lets get you set so you can start navigating on your dashboard</p>
+                    <div class="firstLast">
+                        <input class="inputForm" type="text" name="first name" id="" required value=""
+                            onkeyup="this.setAttribute('value', this.value);">
+                        <label class="labelForm"> First name</label>
+                        <input class="inputForm" type="text" name="last name" id="" required value=""
+                            onkeyup="this.setAttribute('value', this.value);">
+                        <label class="labelForm formText"> Last name</label>
+                    </div>
+                    <div class="username">
+                        <input class="inputForm" type="text" name="username" id="" required value=""
+                            onkeyup="this.setAttribute('value', this.value);">
+                        <label class="labelForm">Username</label>
+                    </div>
+                    <div class="inputsLayout">
+                        <input class="inputForm" type="email" name="email" id="" required value=""
+                            onkeyup="this.setAttribute('value', this.value);">
+                        <label class="formLabel"> Email</label>
+                    </div>
+                    <div class="firstLast">
+                        <input class="inputForm" type="password" name="password" id="password" required value=""
+                            onkeyup="this.setAttribute('value', this.value);">
+                        <label class="labelForm">Creat password</label>
+                        <input class="inputForm" type="password" name="password" id="confirmPassword" required value=""
+                            onkeyup="this.setAttribute('value', this.value);">
+                        <label class="labelForm formText"> Confirm password</label>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-eye" id="eyeIcon"></i>
+                        <i class="fa-sharp fa-solid fa-eye-slash  eyeClosed" id="eyeClosed"></i>
+                    </div>
+                    <div class="termsCondition">
+                    <input type="checkbox">
+                    <p class="paragraph">I accept User-Utils<a href="">Terms $ conditions</a></p>
+                    </div>
+                    <button class="login"><a href="">Signup</a></button>
+                    <p>Or signup with</p>
+                    <div class="signinOption">
+                    <div class="signinIcon">
+
+                    </div>
+                    <div class="signIcon">
+                        
+                    </div>
+                    </div>
+            </div>
+            <div class="formControl">
+                <div class="signin">
+                    <h1>Hey</h1>
+                    <p>Already have an account?</p>
+                    <button><a href="login.html">login</a></button>
+                </div>
+
+            </div>
+
+
+            </form>
+
+        </div>
+        </div>
+    </main>
+   <script src="js/signup.js"></script>
+</body>
+
+</html>

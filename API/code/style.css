@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Cantarell:wght@400;700&family=Catamaran:wght@300&family=Titan+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Catamaran', sans-serif;
+}
+
+body {
+  background-image: url(/image/istockphoto-1203327078-612x612.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .container {
+  -webkit-transition: 10s;
+  transition: 10s;
+  width: 900px;
+  height: 630px;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 2px 2px 1px 1px rgba(207, 255, 251, 0.091);
+          box-shadow: 2px 2px 1px 1px rgba(207, 255, 251, 0.091);
+}
+
+body .container .formClick {
+  width: 60%;
+  height: inherit;
+  background: white;
+}
+
+body .container .formClick .form {
+  margin: 80px auto auto 0px;
+  text-align: center;
+}
+
+body .container .formClick .form h1 {
+  font-size: 30px;
+}
+
+body .container .formClick .form .firstLast {
+  position: relative;
+}
+
+body .container .formClick .form .firstLast .inputForm {
+  width: 167px;
+  height: 30px;
+  margin-top: 20px;
+  padding-left: 10px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+body .container .formClick .form .firstLast .inputForm:focus {
+  border: 1px solid #5fd7ff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .container .formClick .form .firstLast .labelForm {
+  position: absolute;
+  left: 7rem;
+  top: 23px;
+}
+
+body .container .formClick .form .firstLast .formText {
+  left: 18rem;
+}
+
+body .container .formClick .form .firstLast .inputForm.active .labelForm,
+body .container .formClick .form .firstLast .inputForm:focus + .labelForm,
+body .container .formClick .form .firstLast .inputForm:not([value=""]) + .labelForm,
+body .container .formClick .form .firstLast .inputForm.active + .label {
+  width: 130px;
+  top: 5px;
+  background: white;
+  height: 20px;
+  color: #5fd7ff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .container .formClick .form .username {
+  position: relative;
+}
+
+body .container .formClick .form .username .labelForm {
+  position: absolute;
+  left: 7rem;
+  top: 23px;
+}
+
+body .container .formClick .form .username .inputForm {
+  width: 350px;
+  height: 30px;
+  margin-top: 20px;
+  padding-left: 10px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+body .container .formClick .form .username .inputForm:focus {
+  border: 1px solid #5fd7ff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .container .formClick .form .username .inputForm.active .labelForm,
+body .container .formClick .form .username .inputForm:focus + .labelForm,
+body .container .formClick .form .username .inputForm:not([value=""]) + .labelForm,
+body .container .formClick .form .username .inputForm.active + .label {
+  width: 90px;
+  top: 5px;
+  background: white;
+  height: 20px;
+  color: #5fd7ff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .container .formClick .form .inputsLayout {
+  width: 200px;
+  height: 70px;
+  position: relative;
+  top: 10px;
+  left: 90px;
+}
+
+body .container .formClick .form .inputsLayout .inputForm {
+  width: 350px;
+  height: 30px;
+  margin-top: 20px;
+  padding-left: 10px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+body .container .formClick .form .inputsLayout .inputForm:focus {
+  border: 1px solid #5fd7ff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .container .formClick .form .inputsLayout .formLabel {
+  position: absolute;
+  left: 23px;
+  top: 23px;
+}
+
+body .container .formClick .form .inputsLayout .label {
+  top: 77px;
+}
+
+body .container .formClick .form .inputsLayout .inputForm.active .formLabel,
+body .container .formClick .form .inputsLayout .inputForm:focus + .formLabel,
+body .container .formClick .form .inputsLayout .inputForm:not([value=""]) + .formLabel,
+body .container .formClick .form .inputsLayout .inputForm.active + .label {
+  width: 60px;
+  left: 10px;
+  top: 5px;
+  background: white;
+  height: 20px;
+  color: #5fd7ff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .container .formClick .form .icon {
+  height: 10px;
+  top: 400px;
+  left: 21rem;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+}
+
+body .container .formClick .form .eyeClosed {
+  position: absolute;
+  top: 0px;
+  left: -1px;
+  background: white;
+}
+
+body .container .formClick .form .termsCondition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  margin-top: 30px;
+}
+
+body .container .formClick .form .termsCondition input {
+  margin-left: 7rem;
+  cursor: pointer;
+}
+
+body .container .formClick .form .termsCondition .paragraph {
+  font-weight: 600;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+
+body .container .formClick .form .termsCondition .paragraph a {
+  text-decoration: none;
+  color: blue;
+  margin-left: 5px;
+}
+
+body .container .formClick .form .login {
+  width: 360px;
+  height: 40px;
+  border: 1px solid black;
+  outline: none;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 20px;
+  border-radius: 30px;
+  background: #6fb7ff;
+  cursor: pointer;
+}
+
+body .container .formClick .form .login a {
+  text-decoration: none;
+  color: white;
+}
+
+body .container .formClick .signinOption {
+  width: 20%;
+  height: 30px;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .formClick .signinOption .signinIcon {
+  width: 30px;
+  height: inherit;
+  background-image: url(/image/images.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .container .formClick .signinOption .signIcon {
+  width: 30px;
+  height: inherit;
+  background-image: url(/image/facebook.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .container .formControl {
+  width: 40%;
+  height: inherit;
+  background: #5fd7ff;
+}
+
+body .container .formControl .signin {
+  margin: 250px auto auto 60px;
+}
+
+body .container .formControl .signin button {
+  width: 250px;
+  height: 40px;
+  border: 1px solid black;
+  outline: none;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+  border-radius: 30px;
+  background: white;
+  cursor: pointer;
+}
+
+body .container .formControl .signin button a {
+  text-decoration: none;
+  color: #5fd7ff;
+  font-weight: 600;
+}
+
+body .container .formControl .signin h1 {
+  font-size: 30px;
+}
+/*# sourceMappingURL=style.css.map */

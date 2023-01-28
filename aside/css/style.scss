@@ -48,6 +48,7 @@
     height: $height;
     background: $background;
     margin-left: 30px;
+    margin-top: 15px;
 }
 @mixin inputStyle1 {
     width: 200px;
@@ -105,4 +106,4 @@
 @import './dashboard';
 @import './main1';
 @import './calendar';  
-@import './footer';  
+@import './footer'; 
