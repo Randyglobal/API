@@ -1589,16 +1589,277 @@ main .context .navigation .dualDivs .rightNavigate .weatherStatistics {
   background: #b5b2b2;
 }
 
-footer {
+.body {
+  font-family: 'Catamaran', sans-serif;
+}
+
+.body main {
+  width: 100%;
+}
+
+.body main form {
+  width: 450px;
+  height: 580px;
+  margin: 30px auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(116, 116, 116, 0.464);
+          box-shadow: 1px 1px 2px 1px rgba(116, 116, 116, 0.464);
+}
+
+.body main form .singleDiv {
+  width: 100%;
+  height: 60px;
+  background: #5b5bff;
+  border-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.body main form .singleDiv .headerLog {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  margin: 10px auto;
+  position: relative;
+  top: 5px;
+}
+
+.body main form .singleDiv .headerLog i {
+  font-size: 35px;
+  margin: 5px auto auto 10px;
+  color: white;
+}
+
+.body main form .inputDiv {
+  width: 350px;
+  height: 180px;
+  margin: 20px auto auto 40px;
+  position: relative;
+}
+
+.body main form .inputDiv .icon {
+  height: 10px;
+  left: 360px;
+  top: 120px;
+  cursor: pointer;
   position: absolute;
-  width: 42%;
-  top: 37.5rem;
-  left: 17rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  z-index: 2;
+}
+
+.body main form .inputDiv #eyeClosed {
+  position: absolute;
+  top: 0px;
+  left: -1px;
+  background: white;
+}
+
+.body main form .inputDiv .secondInput {
+  margin-top: 15px;
+}
+
+.body main form .inputDiv .labelOne, .body main form .inputDiv a {
+  font-weight: 500;
+}
+
+.body main form .inputDiv .inputOne {
+  width: 330px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.body main form .inputDiv .inputOne:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 1px solid #5b5bff;
+}
+
+.body main form .inputDiv p a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.body main form .inputDiv p a:hover {
+  color: #5b5bff;
+}
+
+.body main form .firstBtn {
+  width: 350px;
+  text-decoration: none;
+  padding: 12px;
+  margin: 40px auto auto 40px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #5b5bff;
+  cursor: pointer;
+}
+
+.body main form .firstBtn:hover {
+  background: #0365ac;
+}
+
+.body main form .firstBtn a {
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.body main form .paragraph {
+  margin-top: 20px;
+  margin-left: 120px;
+}
+
+.body main form .paragraph a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #5b5bff;
+}
+
+.body main form span {
+  margin-left: 200px;
+}
+
+.body main form .facebookOr {
+  text-decoration: none;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+.body main form .facebookOr i {
+  font-size: 17px;
+  color: white;
+}
+
+.body main form .facebookOr .fa-facebook-f {
+  position: absolute;
+  left: 34rem;
+  top: 29.5rem;
+}
+
+.body main form .facebookOr .fa-google {
+  position: absolute;
+  right: 39.5rem;
+  top: 29.5rem;
+}
+
+.body main form .facebookOr .button {
+  text-decoration: none;
+  width: 170px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  padding: 11px;
+  font-size: 500;
+  cursor: pointer;
+}
+
+.body main form .facebookOr a {
+  width: 160px;
+  text-decoration: none;
+  color: white;
+  margin-left: 24px;
+}
+
+.body main form .facebookOr #btn {
+  background: #5b5bff;
+  color: white;
+}
+
+.body main form .facebookOr #btn:hover {
+  background: #0365ac;
+}
+
+.body main form .facebookOr #buton {
+  background: #5b5bff;
+  color: white;
+}
+
+.body main form .facebookOr #buton:hover {
+  background: #0365ac;
+}
+
+@-webkit-keyframes secondForm {
+  from {
+    margin-top: 30%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}
+
+@keyframes secondForm {
+  from {
+    margin-top: 30%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}
+
+main .containerDiv .control .signin {
+  margin-top: 160px;
+  width: 90%;
+  text-align: center;
+  margin-left: 20px;
+}
+
+main .containerDiv .control .signin h3 {
+  width: 100%;
+  margin-left: 0;
+}
+
+main .containerDiv .forgot {
+  line-height: 5px;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+  -webkit-animation-name: secondForm;
+          animation-name: secondForm;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+main .containerDiv .forgot form .headOne {
+  margin-top: 200px;
+}
+
+main .containerDiv .forgot form .inputs .formLabel {
+  margin-top: 10px;
+}
+
+main .containerDiv .forgot form .inputs .label {
+  margin-top: 10px;
+  width: 200px;
+}
+
+main .containerDiv .forgot form button {
+  margin-top: -10px;
+}
+
+main .containerDiv .forgot form .password {
+  margin-top: 30px;
+}
+
+main .headerLog {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  margin: 10px auto;
+  position: relative;
+  top: 5px;
+}
+
+main .headerLog i {
+  font-size: 35px;
+  margin: 5px auto auto 10px;
+  color: white;
+}
+
+main h3 {
+  margin-left: 190px;
 }
 /*# sourceMappingURL=style.css.map */

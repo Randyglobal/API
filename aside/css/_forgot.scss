@@ -1,105 +1,80 @@
-.boddy {
-    // background: rgb(255, 221, 161);
-    font-family: 'Catamaran', sans-serif;
+@keyframes secondForm {
+    from {
+        margin-top: 30%;
+    }
 
-    main {
-        width: 100%;
+    to {
+        margin-top: 0%;
+    }
 
-        .form {
-            width: 500px;
-            height: 350px;
-            background: white;
-            margin: 140px auto;
-            border-radius: 8px;
-            box-shadow: 1px 1px 2px 1px rgba(116, 116, 116, 0.464);     
+}
 
-            .singleDiv {
-                width: 100%;
-                height: 60px;
-                background: rgb(91, 91, 255);
-                border-radius: 5px;
-                border-bottom-right-radius: 0;
-                border-bottom-left-radius: 0;
+main {
 
-                .headerLog {
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 30px;
-                    // border: 1px solid white;
-                    margin: 10px auto;
-                    position: relative;
-                    top: 5px;
+    .containerDiv {
 
-                    i {
-                        font-size: 35px;
-                        margin: 5px auto auto 10px;
-                        color: white;
-                    }
-                }
+        .control {
+            .signin {
+                margin-top: 160px;
+                width: 90%;
+                text-align: center;
+                margin-left: 20px;
 
                 h3 {
-                    margin-left: 190px;
-                }
-            }
-
-            .inputTiv {
-                margin: 80px auto auto 56px;
-                // background: red;
-                position: relative;
-
-                .labelOne,
-                a {
-                    font-weight: 500;
-                }
-
-                .labelOne {
-                    margin-top: 20px;
-                }
-
-                .inputTne {
-                    width: 350px;
-                    padding: 10px;
-                    outline: none;
-                    border: 1px solid gray;
-                    border-radius: 4px;
-                    font-size: 16px;
-
-                    &:focus {
-                        transition: 0.3s;
-                        border: 1px solid rgb(91, 91, 255);
-                    }
-
-                }
-            }
-
-            .firstBtn {
-                width: 370px;
-                text-decoration: none;
-                padding: 10px;
-                margin: 50px auto auto 0px;
-                border-radius: 5px;
-                outline: none;
-                border: none;
-                background: rgb(91, 91, 255);
-                cursor: pointer;
-
-                &:hover {
-                    background: rgb(3, 101, 172);
-                }
-
-                a {
                     width: 100%;
-                    padding: 10px;
-                    text-decoration: none;
-                    color: white;
-                    font-size: 17px;
+                    margin-left: 0;
                 }
-
             }
-
-
-
         }
 
+        .forgot {
+            line-height: 5px;
+            transition-delay: 2s;
+            animation-name: secondForm;
+            animation-duration: 3s;
+
+            form {
+                .headOne {
+                    margin-top: 200px;
+                }
+
+                .inputs {
+                    .formLabel {
+                        margin-top: 10px;
+                    }
+                    .label{
+                        margin-top: 10px;
+                        width: 200px;
+                    }
+                }
+
+                button {
+                    margin-top: -10px;
+                }
+                .password{
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+
+    .headerLog {
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        // border: 1px solid white;
+        margin: 10px auto;
+        position: relative;
+        top: 5px;
+
+        i {
+            font-size: 35px;
+            margin: 5px auto auto 10px;
+            color: white;
+        }
+    }
+
+    h3 {
+        margin-left: 190px;
     }
 }

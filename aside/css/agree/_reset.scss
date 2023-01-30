@@ -1,0 +1,21 @@
+* {
+    margin: auto;
+    padding: 0;
+    font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+    box-sizing: inherit;
+}
+/* custom properties */
+$container_border: 1px solid #E0E0E0;
+$form-label_background-color: #1E88E5;
+$h6_color: #1976D2;
+$language_color: rgba(56, 54, 54, 0.825);
+$phone-min-size: 576px;
+$tablet-min-size: 768px;
+$small-computer-min-size: 992px;
+$larger-computer-min-size: 1200px;
+$container_background: transparent;
+$text_color: #202021f8;
+$botton_font-size: 16px;
+$botton_background: transparent;
+$hover_color: #3991df;
+$text_font-size: 14px;

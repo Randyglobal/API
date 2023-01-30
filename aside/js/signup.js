@@ -90,7 +90,8 @@ submit.addEventListener('click', event =>{
 
     objectArray.push(createdObject);
     stroredItem = localStorage.setItem('user', JSON.stringify(objectArray));
-    alert(`${userLog.value} Account created successfully`)
+    alert(`${userLog.value}'s Account created successfully`)
+    document.location = 'dashboard.html';
 })
 
 
