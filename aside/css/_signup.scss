@@ -1,0 +1,251 @@
+body {
+    background-image: url(/image/istockphoto-1203327078-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+        // transition: 10s;
+        width: 900px;
+        height: 630px;
+        margin: 10px auto;
+        display: flex;
+        box-shadow: 2px 2px 1px 1px rgba(207, 255, 251, 0.091);
+
+        // border: none;
+        .formClick {
+            @include widthHeight (60%);
+            background: $textColor;
+
+
+        .form {
+            margin: 80px auto auto 0px;
+            text-align: center;
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .firstLast {
+                position: relative;
+
+                .inputForm {
+                    width: 167px;
+                    height: 30px;
+                    margin-top: 20px;
+                    @include inputStyle;
+
+                }
+
+                .inputForm:focus {
+                    @include focusStyle;
+                }
+
+                .labelForm {
+                    @include labelStyle (23px, 7rem);
+                }
+
+                .formText {
+                    left: 18rem;
+                }
+
+                .inputForm.active .labelForm,
+                .inputForm:focus+.labelForm,
+                .inputForm:not([value=""])+.labelForm,
+                .inputForm.active+.label {
+                    width: 130px;
+                    // left: 10px;
+                    top: 5px;
+                    @include inputLable;
+                }
+            }
+
+            .username {
+                position: relative;
+
+                .labelForm {
+                    @include labelStyle (23px, 7rem);
+                }
+
+                .inputForm {
+                    width: 350px;
+                    height: 30px;
+                    margin-top: 20px;
+                    @include inputStyle;
+
+                }
+
+                .inputForm:focus {
+                    @include focusStyle;
+                }
+
+                .inputForm.active .labelForm,
+                .inputForm:focus+.labelForm,
+                .inputForm:not([value=""])+.labelForm,
+                .inputForm.active+.label {
+                    width: 90px;
+                    // left: 10px;
+                    top: 5px;
+                    @include inputLable;
+                }
+
+            }
+
+            .inputsLayout {
+                width: 200px;
+                height: 70px;
+                // background: yellow;
+                position: relative;
+                top: 10px;
+                left: 90px;
+
+                .inputForm {
+                    width: 350px;
+                    height: 30px;
+                    margin-top: 20px;
+                    @include inputStyle;
+                }
+
+                .inputForm:focus {
+                    @include focusStyle;
+                }
+
+                .formLabel {
+                    @include labelStyle (23px, 23px);
+                }
+
+                .label {
+                    top: 77px;
+                }
+
+                .inputForm.active .formLabel,
+                .inputForm:focus+.formLabel,
+                .inputForm:not([value=""])+.formLabel,
+                .inputForm.active+.label {
+                    width: 60px;
+                    left: 10px;
+                    top: 5px;
+                    @include inputLable;
+                }
+            }
+
+            .icon {
+                height: 10px;
+                top: 400px;
+                left: 21rem;
+                cursor: pointer;
+                position: absolute;
+                z-index: 2;
+            }
+
+            .eyeClosed {
+                position: absolute;
+                top: 0px;
+                left: -1px;
+                background: white;
+            }
+
+            .termsCondition {
+                // text-align: center;
+                display: flex;
+                height: 30px;
+                margin-top: 30px;
+                // background: red;
+
+                input {
+                    margin-left: 7rem;
+                    cursor: pointer;
+                }
+
+                .paragraph {
+                    font-weight: 600;
+                    margin-left: 5px;
+                    margin-top: 3px;
+
+                    a {
+                        text-decoration: none;
+                        color: blue;
+                        margin-left: 5px;
+                    }
+                }
+            }
+
+            .login {
+                width: 360px;
+                height: 40px;
+                border: 1px solid black;
+                outline: none;
+                font-size: 15px;
+                font-weight: 700;
+                margin-top: 20px;
+                border-radius: 30px;
+                background: $inputColor;
+                cursor: pointer;
+
+                a {
+                    text-decoration: none;
+                    color: $textColor;
+                }
+            }
+
+        }
+
+        .signinOption {
+            width: 20%;
+            height: 30px;
+            margin: 10px auto;
+            display: flex;
+            justify-content: space-between;
+
+            .signinIcon {
+                width: 30px;
+                height: inherit;
+                background-image: url(/image/images.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .signIcon {
+                width: 30px;
+                height: inherit;
+                background-image: url(/image/facebook.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+    }
+        .formControl {
+            @include widthHeight (40%);
+            background: $bodyBackground;
+
+            .signin {
+                margin: 250px auto auto 60px;
+
+                button {
+                    width: 250px;
+                    height: 40px;
+                    border: 1px solid black;
+                    outline: none;
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-top: 10px;
+                    border-radius: 30px;
+                    background: $textColor;
+                    cursor: pointer;
+
+                    a {
+                        text-decoration: none;
+                        color: $bodyBackground;
+                        font-weight: 600;
+                    }
+                }
+
+                h1 {
+                    font-size: 30px;
+
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import './reset';
+@mixin containerStyle ($width, $height, $background) {
+    width: $width;
+    height: $height;  
+    margin-top: 30px;
+    border-radius: 6px;
+    display: block;
+    background: $background;
+    position: relative
+}
+@import './header';
+@import './large';
+@import './normal';
+@import './tablet';
+@import './mobile';

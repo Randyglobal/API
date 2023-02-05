@@ -1,0 +1,206 @@
+body {
+    background-image: url(/aside/image/);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .containerDiv {
+        // transition: 10s;
+        width: 100%;
+        height: 150px;
+        margin: 0px;
+        display: block;
+        box-shadow: 2px 2px 1px 1px rgba(207, 255, 251, 0.091);
+        // border: none;
+
+        .formControl {
+            position: absolute;
+            top: 30.5rem;
+            @include widthHeight (100%);
+            background: $bodyBackground;
+
+            .signin{
+                text-align: center;
+                margin: 0px auto auto 0px;  
+                
+                img{
+                    width: 200px;
+                    height: 100px;
+                }
+                button{
+                    width: 250px;
+                    height: 40px;
+                    border: 1px solid black;
+                    outline: none;
+                    font-size: 15px;
+                    font-weight: 700;
+                    margin-top: 10px;
+                    border-radius: 30px;
+                    background: $textColor;
+                    cursor: pointer;
+                    a{
+                        text-decoration: none;
+                        color: $bodyBackground;
+                        font-weight: 600;
+                    }
+                }
+            h1 {
+                font-size: 30px;
+               
+            }
+           
+        }
+    }
+        .formClick {
+            @include widthHeight (60%);
+            background: $textColor;
+
+        }
+        .forgot{
+            margin-top: -60px;
+        }
+
+        form {
+            margin: 70px auto auto 70px;
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .inputs {
+                width: 200px;
+                height: 100px;
+                // background: yellow;
+                position: relative;
+                top: 10px;
+                .inputForm {
+                    padding-left: 10px;
+                    width: 350px;
+                    height: 30px;
+                    margin-top: 20px;
+                    outline: none;
+                    border: 1px solid gray;
+                    border-radius: 8px;
+                    font-size: 14px;
+                }
+                .inputForm:focus{
+                    border: 1px solid $bodyBackground;
+                    transition: 1s;
+                }
+
+                .formLabel {
+                    position: absolute;   
+                    left: 10px;
+                    top: 24px;
+                }
+                .label{
+                    top: 77px;
+                }  
+                
+                .inputForm.active .formLabel,
+                .inputForm:focus + .formLabel, 
+                .inputForm:not([value=""]) + .formLabel,
+                .inputForm.active + .label{
+                    background: white;
+                    height: 20px;
+                    width: 130px;
+                    top: 4px;
+                    color: $bodyBackground;
+                    transition: 1s;
+                }
+
+                .inputForm.active .label,
+                .inputForm:focus + .label, 
+                .inputForm:not([value=""]) + .label,
+                .inputForm.active + .label{
+                    background: white;
+                    height: 20px;
+                    width: 70px;
+                    top: 60px;
+                    color: $bodyBackground;
+                }
+            }
+            .icon{
+                display: block;
+                height: 10px;
+                left: 27rem;
+                top: 210px;
+                cursor: pointer;
+                position: absolute;
+                z-index: 6;
+            }
+
+            .eyeClosed{
+                position: absolute;
+                top: 0px;
+                left: -1px;
+                background: white;
+            }
+
+
+            .bottomButton{
+                width: 360px;
+                height: 15px;
+                // background: red;
+                margin-top: 30px;
+                // font-size: 20px;
+                a{
+                    text-decoration: none;
+                    color: $bodyBackground;
+                }
+                button{
+                    border: none;
+                    outline: none;
+                    font-size: 15px;
+                    font-weight: 700;
+                    background: $textColor;
+
+                }
+                .button{
+                   margin-left: 180px;
+                }
+            }
+
+            .login{
+                width: 360px;
+                height: 40px;
+                border: 1px solid black;
+                outline: none;
+                font-size: 15px;
+                font-weight: 700;
+                margin-top: 30px;
+                border-radius: 30px;
+                background: $inputColor;
+                cursor: pointer;
+                a{
+                    text-decoration: none;
+                    color: $textColor;
+                }
+            }
+
+            .signinOptions{
+                width: 50%;
+                height: 30px;
+                margin: 20px auto auto 120px;
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer;
+    
+                .signinIcon{
+                    width: 30px;
+                    height: inherit;
+                    background-image: url(/image/images.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .signIcon{
+                    width: 30px;
+                    height: inherit;
+                    background-image: url(/image/facebook.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
